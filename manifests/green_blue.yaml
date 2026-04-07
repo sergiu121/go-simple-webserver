@@ -25,6 +25,13 @@ spec:
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            periodSeconds: 1
+            failureThreshold: 3
+            terminationGracePeriodSeconds: 1
 
 ---
 apiVersion: v1
