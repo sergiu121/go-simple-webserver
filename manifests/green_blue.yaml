@@ -28,7 +28,7 @@ spec:
           livenessProbe:
             httpGet:
               path: /health
-              port: 80
+              port: 8080
             periodSeconds: 1
             failureThreshold: 3
             terminationGracePeriodSeconds: 1
