@@ -25,11 +25,3 @@ spec:
           image: ghcr.io/sergiu121/go-simple-webserver:latest
           ports:
             - containerPort: 8080
-          imagePullPolicy: Always
-          livenessProbe:
-            httpGet:
-              path: /health
-              port: 8080
-            periodSeconds: 1
-            failureThreshold: 3
-            terminationGracePeriodSeconds: 1
