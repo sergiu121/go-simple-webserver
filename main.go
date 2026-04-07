@@ -51,6 +51,7 @@ func main() {
 	}()
 
 	log.Println("Starting server on http://localhost:8080")
+	log.Println("Hello from my custom print")
 	if err := server.ListenAndServe(); err != http.ErrServerClosed {
 		log.Fatalf("HTTP server ListenAndServe: %v", err)
 	}
