@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: go-simple-webserver
+  name: go-simple-webserver-gree-blue
   labels:
     app: go-simple-webserver
 spec:
